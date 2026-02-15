@@ -138,6 +138,25 @@ body{
 
 
 
+/* Sponsors Section */
+
+#sponsors{
+    margin:150px auto;
+}
+.sponsors-content{
+    /* background-color: #E02C6D; */
+    display:grid;
+    grid-template-columns:repeat(6, 150px);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
 
 
 
@@ -167,6 +186,12 @@ body{
         font-size:40px;
     }
 
+    .sponsors-content{
+        grid-template-columns:repeat(3, auto);
+        justify-content: center;
+        gap: 30px;
+    }
+
 }
 
 
@@ -187,6 +212,14 @@ body{
         font-size:40px;
     }
 
+    .sponsors-content{
+        grid-template-columns:repeat(3, auto);
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+
 }
 
 
@@ -204,6 +237,12 @@ body{
     }
     .heading-one{
         font-size:40px;
+    }
+
+    .sponsors-content{
+        grid-template-columns:repeat(6, auto);
+        justify-content: center;
+        gap: 30px;
     }
 
 }
