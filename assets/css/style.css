@@ -46,13 +46,13 @@ body{
 /*=========================
     Header Section 
 ===========================*/
-.navbar{
+nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:2rem 0rem;
 }
-.navbar .brand {
+.brand {
     color:var(--secondary-color);
     font-size:1.5rem;
     letter-spacing:0.0625rem;
@@ -141,7 +141,7 @@ body{
 /* Sponsors Section */
 
 #sponsors{
-    margin:150px auto;
+    margin-top:150px;
 }
 .sponsors-content{
     /* background-color: #E02C6D; */
@@ -154,7 +154,66 @@ body{
 
 
 
+/*=========================
+    Cart Section 
+===========================*/
+#cart{
+    margin-top: 120px;
+}
+.cart-title{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size:28px;
+    margin-bottom:30px;
+}
 
+.cart-content{
+    display:grid;
+    grid-template-columns:repeat(3, 329px);
+    justify-content: center;
+    gap:20px;
+}
+.cart-box{
+    padding:15px;
+    background-color: #ffffff;
+    box-shadow:1px 1px 4px #bdbcbc;
+    border-radius:5px;
+}
+.product-title{
+    color: #18191F;
+    margin:10px 0px;
+    font-size:24px;
+    font-weight:500;
+}
+.product-price{
+    color: #000000;
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+.star-ratting i{
+    color: #FB8200;
+}
+.number-ratting{
+    margin-bottom:12px;
+    margin-left: 7px;
+    color:#5E6366;
+    font-size: 16px;
+}
+.product-description{
+    color: #787885;
+    margin-top:10px;
+    font-size: 15px;
+}
+.cart-btn{
+    text-align: right;
+    margin-right:50px;
+    margin-top:30px;
+}
+.btn-plan{
+    color: var(--color-primary);
+    cursor: pointer;
+}
 
 
 
@@ -192,6 +251,9 @@ body{
         gap: 30px;
     }
 
+    .cart-content{
+        grid-template-columns: repeat(1, 329px);
+    }
 }
 
 
@@ -218,7 +280,9 @@ body{
         gap: 30px;
     }
 
-
+    .cart-content{
+        grid-template-columns: repeat(1,329px);
+    }
 
 }
 
@@ -243,6 +307,10 @@ body{
         grid-template-columns:repeat(6, auto);
         justify-content: center;
         gap: 30px;
+    }
+
+    .cart-content{
+        grid-template-columns: repeat(2, 329px);
     }
 
 }
