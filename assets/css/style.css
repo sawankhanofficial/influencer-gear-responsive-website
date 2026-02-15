@@ -16,7 +16,17 @@ body{
 /*=========================
     Shared Style 
 ===========================*/
+:root{
+    --color-primary:#E02C6D;
+    --secondary-color:#3A3A3A;
+    --color-black:#000000;
+}
 
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
 
 
 
@@ -26,3 +36,75 @@ body{
 /*=========================
     Header Section 
 ===========================*/
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.25rem 0rem;
+}
+.navbar .brand {
+    color:var(--secondary-color);
+    font-size:1.5rem;
+    letter-spacing:0.0625rem;
+    cursor: pointer;
+}
+
+
+.nav-links{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:1.5rem;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-link{
+    color:var(--secondary-color);
+    text-decoration:none;
+    transition:all 0.3s;
+}
+.nav-link:hover{
+    color:var(--color-primary);
+}
+.nav-links li i{
+    font-size:1.20rem;
+}
+.nav-cart-container{
+    font-size:1.30rem;
+    position: relative;
+}
+.nav-cart-container .cart-dot{
+    width:7px;
+    height: 7px;
+    background-color: var(--color-black);
+    border-radius:50%;
+    position: absolute;
+    top:2px;
+    right: 0;
+}
+
+
+
+
+/* Banner Area Design */
+
+
+
+
+
+
+
+
+/*-------------------------------
+    Media Query Start Here
+---------------------------------*/
+
+/* Smaller Device */
+@media screen and (max-width:576px){
+    .navbar{
+        flex-direction: column;
+        gap:0.625rem;
+    }
+}
