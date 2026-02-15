@@ -227,19 +227,60 @@ nav{
 }
 .feature-content{
     display: flex;
-    gap:60px;
+    gap:3.75rem;
     align-items: center;
 }
 .feature-title{
     color: #0A0826;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size:1.875rem;
+    margin-bottom:1.25rem;
 }
 .feature-description{
     color: #6C6C6C;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
+
+
+
+
+/*=========================
+    Footer Section 
+===========================*/
+
+footer{
+    background-color: #0A0826;
+    height:200px;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text{
+    padding-top:3.125rem;
+    text-align: center;
+}
+.footer-title{
+    color: #d6d6d6;
+    font-size:1.5rem;
+}
+.footer-text p{
+    color: #D9DBE1;
+    font-size:0.9375rem;
+    margin:0.75rem 0rem;
+}
+.social-icon{
+    margin-top:1.25rem;
+}
+.social-icon i{
+    color: #ffffff;
+    font-size:1.375rem;
+    margin-right:0.75rem;
+}
+
+
+
 
 
 
@@ -258,20 +299,20 @@ nav{
     }
 
     .banner{
-        margin-top:50px;
+        margin-top:3.125rem;
     }
     .banner-content{
         flex-direction: column-reverse;
         text-align: center;
     }
     .heading-one{
-        font-size:40px;
+        font-size:2.5rem;
     }
 
     .sponsors-content{
         grid-template-columns:repeat(3, auto);
         justify-content: center;
-        gap: 30px;
+        gap:1.875rem;
     }
 
     .cart-content{
@@ -292,20 +333,20 @@ nav{
 @media screen and (min-width:576px) and (max-width:768px){
 
     .banner{
-        margin-top:60px;
+        margin-top:3.75rem;
     }
     .banner-content{
         flex-direction: column-reverse;
         text-align: center;
     }
     .heading-one{
-        font-size:40px;
+        font-size:2.5rem;
     }
 
     .sponsors-content{
         grid-template-columns:repeat(3, auto);
         justify-content: center;
-        gap: 30px;
+        gap:1.875rem;
     }
 
     .cart-content{
@@ -326,20 +367,20 @@ nav{
 @media screen and (min-width:768px) and (max-width:992px){
 
     .banner{
-        margin-top:60px;
+        margin-top:3.75rem;
     }
     .banner-content{
         flex-direction: column-reverse;
         text-align: center;
     }
     .heading-one{
-        font-size:40px;
+        font-size:2.5rem;
     }
 
     .sponsors-content{
         grid-template-columns:repeat(6, auto);
         justify-content: center;
-        gap: 30px;
+        gap:1.875rem;
     }
 
     .cart-content{
